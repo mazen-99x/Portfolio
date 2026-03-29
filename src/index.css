@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+
+
+:root {
+  --primary-color: #5E3BEE;
+  --heading-color: #282938;
+  --bg-shade-color: #F5FCFF;
+  --dirbble-color: #E62872;
+  --body-color: #1C1E53;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--body-color);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+@keyframes spin360 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin360 2s linear infinite;
+}
+::selection{
+  background-color: var(--primary-color);
+  color: white;
+}
